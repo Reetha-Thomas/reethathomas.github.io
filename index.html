@@ -13,6 +13,19 @@
       background-color: #f4f4f4;
     }
 
+    header, .links {
+      text-align: center;
+      padding: 10px;
+      background-color: #eaeaea;
+    }
+
+    header a, .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
     .container {
       max-width: 1000px;
       margin: 0 auto;
@@ -66,21 +79,23 @@
 </head>
 
 <body>
-   <header>
-        <a href="#research">Research Interests</a>
-        <a href="#publications">Publications</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#technical-skills">Technical Skills</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-    </header>
+  <!-- Navigation Links -->
   <div class="links">
-            <a href="https://www.researchgate.net/profile/Reetha_Thomas" target="_blank">ResearchGate</a>
-            <a href="https://www.linkedin.com/in/reetha-thomas/" target="_blank">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank">Google Scholar</a>
-        </div>
-  <div class="container">
+    <a href="https://www.researchgate.net/profile/Reetha_Thomas" target="_blank">ResearchGate</a>
+    <a href="https://www.linkedin.com/in/reetha-thomas/" target="_blank">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank">Google Scholar</a>
+  </div>
 
+  <header>
+    <a href="#research">Research Interests</a>
+    <a href="#publications">Publications</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#technical-skills">Technical Skills</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+  </header>
+
+  <div class="container">
     <!-- Photo and Address in 2 columns -->
     <div class="profile-header">
       <img src="Reetha.jpg" alt="Dr. Reetha Thomas">
@@ -108,30 +123,41 @@
       </p>
     </div>
 
-    <!-- Other Sections -->
-    <div class="section">
+    <!-- Research Interests -->
+    <div class="section" id="research">
       <h2>Research Interests</h2>
       <p>Details about research interests will be added here.</p>
     </div>
 
-    <div class="section">
+    <!-- Publications -->
+    <div class="section" id="publications">
       <h2>Publications</h2>
       <p>Details about publications will be added here.</p>
     </div>
 
-    <div class="section">
+    <!-- Achievements -->
+    <div class="section" id="achievements">
       <h2>Achievements</h2>
       <p>Details about achievements will be added here.</p>
     </div>
 
-    <div class="section">
+    <!-- Technical Skills -->
+    <div class="section" id="technical-skills">
       <h2>Technical Skills</h2>
       <p>Details about technical skills will be added here.</p>
     </div>
 
-    <div class="section">
+    <!-- Teaching -->
+    <div class="section" id="teaching">
       <h2>Teaching</h2>
       <p>Details about teaching experience will be added here.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:reetha.thomas@iimb.ac.in">reetha.thomas@iimb.ac.in</a></p>
+      <p>Phone: +91 9496076250</p>
     </div>
 
   </div>
