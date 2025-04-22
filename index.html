@@ -5,6 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Reetha Thomas - Profile</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header h2 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+    .sidebar {
+      width: 25%;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .sidebar h3 {
+      margin-top: 0;
+    }
+    .content {
+      width: 75%;
+      padding: 15px;
+    }
+    .content section {
+      display: none;
+    }
+    .content section.active {
+      display: block;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.content section');
+      sections.forEach(section => section.classList.remove('active'));
+      
+      const sectionToShow = document.getElementById(sectionId);
+      sectionToShow.classList.add('active');
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -12,105 +89,99 @@
     <h2>Postdoctoral Fellow, Indian Institute of Management Bangalore (IIMB)</h2>
     <nav>
       <ul>
-        <li><a href="mailto:reethathomas19@gmail.com">Email</a></li>
-        <li><a href="https://github.com/reethathomas" target="_blank">GitHub</a></li>
-        <li><a href="https://www.researchgate.net/profile/Reetha-Thomas" target="_blank">ResearchGate</a></li>
-        <li><a href="https://scholar.google.com/citations?user=xxxxxxx" target="_blank">Google Scholar</a></li>
-        <li><a href="https://www.linkedin.com/in/reethathomas/" target="_blank">LinkedIn</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('about')">About Me</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('research')">Research Interests</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('publications')">Publications</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('achievements')">Achievements</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('skills')">Technical Skills</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('teaching')">Teaching & Academic Experience</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('hobbies')">Hobbies</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('contact')">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am currently a <strong>Postdoctoral Fellow</strong> at the <em>Indian Institute of Management Bangalore (IIMB)</em>. I received my <strong>Ph.D. in Mathematics</strong> from the <em>Indian Institute of Information Technology Kottayam</em> in 2024. My research lies at the intersection of mathematical modeling and data-driven methodologies, focusing particularly on air quality modeling, climate data analysis, and neural differential equations.
-    </p>
-    <p>
-      Prior to my Ph.D., I completed an <strong>M.Phil. in Mathematics</strong> from <em>Bharathiar University</em>, and <strong>M.Sc.</strong> and <strong>B.Sc.</strong> in Mathematics from <em>Mahatma Gandhi University, Kottayam</em>.
-    </p>
-  </section>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Sections</h3>
+      <ul>
+        <li><a href="javascript:void(0);" onclick="showSection('about')">About Me</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('research')">Research Interests</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('publications')">Publications</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('achievements')">Achievements</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('skills')">Technical Skills</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('teaching')">Teaching</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('hobbies')">Hobbies</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am currently a <strong>Postdoctoral Fellow</strong> at the <em>Indian Institute of Management Bangalore (IIMB)</em>. I received my <strong>Ph.D. in Mathematics</strong> from the <em>Indian Institute of Information Technology Kottayam</em> in 2024. My research lies at the intersection of mathematical modeling and data-driven methodologies, focusing particularly on air quality modeling, climate data analysis, and neural differential equations.</p>
+        <p>Prior to my Ph.D., I completed an <strong>M.Phil. in Mathematics</strong> from <em>Bharathiar University</em>, and <strong>M.Sc.</strong> and <strong>B.Sc.</strong> in Mathematics from <em>Mahatma Gandhi University, Kottayam</em>.</p>
+      </section>
 
-  <section id="research-interests">
-    <h2>Research Interests</h2>
-    <ul>
-      <li><strong>Fractional Differential Equations</strong></li>
-      <li><strong>Physics-Informed Neural Networks (PINNs)</strong></li>
-      <li><strong>Graph Neural Networks (GNNs)</strong></li>
-      <li><strong>Spatio-temporal Climate Data Analysis</strong></li>
-      <li><strong>Air Quality Prediction</strong></li>
-      <li><strong>Statistical Modeling & Quantile Regression</strong></li>
-    </ul>
-  </section>
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li><strong>Fractional Differential Equations</strong></li>
+          <li><strong>Physics-Informed Neural Networks (PINNs)</strong></li>
+          <li><strong>Graph Neural Networks (GNNs)</strong></li>
+          <li><strong>Spatio-temporal Climate Data Analysis</strong></li>
+          <li><strong>Air Quality Prediction</strong></li>
+          <li><strong>Statistical Modeling & Quantile Regression</strong></li>
+        </ul>
+      </section>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <p>
-      I have published:
-    </p>
-    <ul>
-      <li>6 SCI-indexed journal articles</li>
-      <li>3 Scopus-indexed conference proceedings</li>
-    </ul>
-    <p>
-      A list of my publications is available on <a href="https://scholar.google.com/citations?user=xxxxxxx" target="_blank">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Reetha-Thomas" target="_blank">ResearchGate</a>.
-    </p>
-  </section>
+      <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+          <li>6 SCI-indexed journal articles</li>
+          <li>3 Scopus-indexed conference proceedings</li>
+        </ul>
+        <p>For a full list of my publications, visit my <a href="https://scholar.google.com/citations?user=xxxxxxx" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Reetha-Thomas" target="_blank">ResearchGate</a> profiles.</p>
+      </section>
 
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li><strong>CSIR Direct SRF Awardee</strong> (2024)</li>
-      <li><strong>Invited Speaker</strong>, Brazilian Symposium on Fractional Calculus</li>
-      <li><strong>Qualified State Eligibility Test (SET)</strong>, 2018</li>
-      <li><strong>Isaac Newton Institute Ramanujan Fellowship</strong> (Simons Foundation): Representing, calibrating & leveraging prediction uncertainty from statistics to machine learning.</li>
-    </ul>
-    <p>
-      Publications resulting from this programme must acknowledge: <q>"This work was partially supported by a grant from the Simons Foundation whilst on the Isaac Newton Institute Ramanujan Fellowship."</q>
-    </p>
-  </section>
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+          <li><strong>CSIR Direct SRF Awardee</strong> (2024)</li>
+          <li><strong>Invited Speaker</strong>, Brazilian Symposium on Fractional Calculus</li>
+          <li><strong>Qualified State Eligibility Test (SET)</strong>, 2018</li>
+          <li><strong>Isaac Newton Institute Ramanujan Fellowship</strong> (Simons Foundation)</li>
+        </ul>
+        <p>Publications from this programme should acknowledge: <q>"This work was partially supported by a grant from the Simons Foundation whilst on the Isaac Newton Institute Ramanujan Fellowship."</q></p>
+      </section>
 
-  <section id="technical-skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> Python, MATLAB, Mathematica</li>
-      <li><strong>Methods:</strong> Machine Learning, PINNs, GNNs, Quantile Regression</li>
-    </ul>
-  </section>
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Programming:</strong> Python, MATLAB, Mathematica</li>
+          <li><strong>Methods:</strong> Machine Learning, PINNs, GNNs, Quantile Regression</li>
+        </ul>
+      </section>
 
-  <section id="languages">
-    <h2>Languages</h2>
-    <ul>
-      <li>English</li>
-      <li>Malayalam</li>
-      <li>Hindi</li>
-    </ul>
-  </section>
+      <section id="teaching">
+        <h2>Teaching & Academic Experience</h2>
+        <p>I have over six years of research and teaching experience. I have also worked as a former Lecturer in Mathematics at <em>St. George College, Aruvithura</em> and have guided undergraduate and postgraduate research projects.</p>
+      </section>
 
-  <section id="teaching">
-    <h2>Teaching & Academic Experience</h2>
-    <p>
-      I have over six years of research and teaching experience. I have also worked as a former Lecturer in Mathematics at <em>St. George College, Aruvithura</em> and have guided undergraduate and postgraduate research projects.
-    </p>
-  </section>
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>I enjoy reading, mentoring students, and exploring new developments in applied mathematics and machine learning.</p>
+      </section>
 
-  <section id="hobbies">
-    <h2>Hobbies</h2>
-    <p>
-      I enjoy reading, mentoring students, and exploring new developments in applied mathematics and machine learning.
-    </p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      <strong>Chairperson, Decision Sciences Area</strong><br>
-      C201, Faculty Block C<br>
-      Indian Institute of Management Bangalore<br>
-      Bannerghatta Road, Bengaluru, KA 560076, India.<br>
-      <strong>Email:</strong> <a href="mailto:reethathomas19@gmail.com">reethathomas19@gmail.com</a>
-    </p>
-  </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Chairperson, Decision Sciences Area</strong><br>
+        C201, Faculty Block C<br>
+        Indian Institute of Management Bangalore<br>
+        Bannerghatta Road, Bengaluru, KA 560076, India.<br>
+        <strong>Email:</strong> <a href="mailto:reethathomas19@gmail.com">reethathomas19@gmail.com</a></p>
+      </section>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Dr. Reetha Thomas. All rights reserved.</p>
