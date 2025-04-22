@@ -13,19 +13,6 @@
       background-color: #f4f4f4;
     }
 
-    header, .links {
-      text-align: center;
-      padding: 10px;
-      background-color: #eaeaea;
-    }
-
-    header a, .links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
     .container {
       max-width: 1000px;
       margin: 0 auto;
@@ -65,7 +52,7 @@
     }
 
     .section {
-      margin-bottom: 30px;
+      margin: 60px 0;
     }
 
     .section h2 {
@@ -75,17 +62,44 @@
     .section p {
       text-align: justify;
     }
+
+    header {
+      background-color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .links {
+      background-color: #eaeaea;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0066cc;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Navigation Links -->
+
+  <!-- External Profile Links -->
   <div class="links">
     <a href="https://www.researchgate.net/profile/Reetha_Thomas" target="_blank">ResearchGate</a>
     <a href="https://www.linkedin.com/in/reetha-thomas/" target="_blank">LinkedIn</a>
     <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank">Google Scholar</a>
   </div>
 
+  <!-- Navigation Header -->
   <header>
     <a href="#research">Research Interests</a>
     <a href="#publications">Publications</a>
@@ -96,7 +110,8 @@
   </header>
 
   <div class="container">
-    <!-- Photo and Address in 2 columns -->
+
+    <!-- Photo and Address -->
     <div class="profile-header">
       <img src="Reetha.jpg" alt="Dr. Reetha Thomas">
       <div class="contact-info">
@@ -110,55 +125,50 @@
     </div>
 
     <!-- About Me Section -->
-    <div class="section">
+    <section class="section" id="about">
       <h2>About Me</h2>
       <p>
-        I am currently a Postdoctoral Fellow at the Indian Institute of Management Bangalore (IIMB), specializing in climate modeling. My research expertise lies in nonlinear partial differential equations, particularly focusing on dynamical systems governed by fractional differential and differential-difference equations. I have made significant contributions to the study of time-space fractional partial differential equations, expanding key analytical techniques such as Lie Symmetry Analysis and the Invariant Subspace Method. These efforts have advanced the theoretical understanding of complex systems, while also paving the way for practical solutions to real-world problems.
+        I am currently a Postdoctoral Fellow at the Indian Institute of Management Bangalore (IIMB), specializing in climate modeling...
       </p>
-      <p>
-        Beyond my theoretical work, my research has extended into the realm of fuzzy differential equations and the mathematical modeling of SIRS (Susceptible-Infected-Recovered-Susceptible) epidemiological systems. This multidisciplinary approach has helped to bridge the gap between mathematical theory and applied fields, addressing critical challenges in health and climate systems. More recently, I have integrated advanced machine learning techniques into my research, focusing on Physics-Informed Neural Networks (PINNs) and Graph Neural Networks (GNNs). By merging deep learning with traditional mathematical models, I am enhancing the predictive capabilities of these models to solve complex, nonlinear differential equations with greater accuracy.
-      </p>
-      <p>
-        My academic journey began with my Bachelor's and Master's degrees in Mathematics from Mahatma Gandhi University, Kottayam, where I achieved top grades in both. I continued my studies with an M.Phil. in Mathematics from Bharathiar University, where I developed mathematical models for glucose-insulin regulation. My doctoral research, supervised by Dr. T. Bakkyaraj at the Indian Institute of Information Technology Kottayam, focused on invariant analysis and exact solutions of nonlinear fractional partial differential and differential-difference equations. My work blends foundational mathematical methods with emerging computational techniques, offering new insights into both abstract theory and applied research.
-      </p>
-    </div>
+      <!-- You can keep your full text here -->
+    </section>
 
-    <!-- Research Interests -->
-    <div class="section" id="research">
+    <!-- Research Interests Section -->
+    <section class="section" id="research">
       <h2>Research Interests</h2>
       <p>Details about research interests will be added here.</p>
-    </div>
+    </section>
 
-    <!-- Publications -->
-    <div class="section" id="publications">
+    <!-- Publications Section -->
+    <section class="section" id="publications">
       <h2>Publications</h2>
       <p>Details about publications will be added here.</p>
-    </div>
+    </section>
 
-    <!-- Achievements -->
-    <div class="section" id="achievements">
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
       <h2>Achievements</h2>
       <p>Details about achievements will be added here.</p>
-    </div>
+    </section>
 
-    <!-- Technical Skills -->
-    <div class="section" id="technical-skills">
+    <!-- Technical Skills Section -->
+    <section class="section" id="technical-skills">
       <h2>Technical Skills</h2>
       <p>Details about technical skills will be added here.</p>
-    </div>
+    </section>
 
-    <!-- Teaching -->
-    <div class="section" id="teaching">
+    <!-- Teaching Section -->
+    <section class="section" id="teaching">
       <h2>Teaching</h2>
       <p>Details about teaching experience will be added here.</p>
-    </div>
+    </section>
 
-    <!-- Contact -->
-    <div class="section" id="contact">
+    <!-- Contact Section -->
+    <section class="section" id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:reetha.thomas@iimb.ac.in">reetha.thomas@iimb.ac.in</a></p>
-      <p>Phone: +91 9496076250</p>
-    </div>
+      <p>Indian Institute of Management Bangalore, Bannerghatta Road, Bengaluru, KA 560076, India</p>
+    </section>
 
   </div>
 </body>
