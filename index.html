@@ -11,7 +11,6 @@
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
-      line-height: 1.6;
     }
 
     .container {
@@ -21,21 +20,21 @@
       background-color: #fff;
     }
 
-    .header {
+    .profile-header {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 40px;
       margin-bottom: 30px;
+      flex-wrap: wrap;
     }
 
-    .header img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
+    .profile-header img {
+      width: 220px;
+      height: 220px;
       object-fit: cover;
-      border: 3px solid #ddd;
+      border-radius: 10px;
+      border: 2px solid #ccc;
     }
 
     .contact-info {
@@ -52,21 +51,22 @@
       font-size: 16px;
     }
 
-    .about-me {
-      text-align: justify;
-    }
-
     .about-me h2 {
       margin-top: 0;
+    }
+
+    .about-me p {
+      text-align: justify;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <!-- Header with photo and contact info -->
-    <div class="header">
-      <img src="reetha_thomas.jpg" alt="Dr. Reetha Thomas" />
+
+    <!-- Photo and Address in 2 columns -->
+    <div class="profile-header">
+      <img src="ReethaPhoto.jpg" alt="Dr. Reetha Thomas">
       <div class="contact-info">
         <h1>Dr. Reetha Thomas</h1>
         <p><strong>Postdoctoral Fellow</strong></p>
@@ -90,6 +90,7 @@
         My academic journey began with my Bachelor's and Master's degrees in Mathematics from Mahatma Gandhi University, Kottayam, where I achieved top grades in both. I continued my studies with an M.Phil. in Mathematics from Bharathiar University, where I developed mathematical models for glucose-insulin regulation. My doctoral research, supervised by Dr. T. Bakkyaraj at the Indian Institute of Information Technology Kottayam, focused on invariant analysis and exact solutions of nonlinear fractional partial differential and differential-difference equations. My work blends foundational mathematical methods with emerging computational techniques, offering new insights into both abstract theory and applied research.
       </p>
     </div>
+
   </div>
 </body>
 
